@@ -1,0 +1,425 @@
+/* ===============================
+   GENERAL
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffffff;
+    color: #222;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* ===============================
+   TOP NAVBAR
+================================ */
+
+.top-navbar {
+    height: 75px;
+    background: #1d1d1d;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    padding: 0 25px;
+}
+
+
+/* MENU BUTTON */
+
+.menu-btn {
+    position: absolute;
+    left: 25px;
+
+    background: transparent;
+    border: none;
+
+    color: white;
+    font-size: 27px;
+
+    cursor: pointer;
+}
+
+
+/* BRAND */
+
+.brand {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 28px;
+    font-weight: normal;
+
+    letter-spacing: 1px;
+}
+
+
+/* RIGHT ICONS */
+
+.nav-icons {
+    position: absolute;
+    right: 25px;
+
+    display: flex;
+    gap: 25px;
+
+    font-size: 21px;
+}
+
+.nav-icons i {
+    cursor: pointer;
+}
+
+
+/* ===============================
+   DATE + WEATHER
+================================ */
+
+.info-bar {
+    min-height: 70px;
+
+    border-bottom: 1px solid #ddd;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 25px;
+}
+
+
+/* DATE */
+
+.date {
+    font-size: 17px;
+    color: #333;
+}
+
+
+/* WEATHER */
+
+.weather {
+    text-align: right;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.air-quality {
+    font-size: 15px;
+}
+
+.air-quality b {
+    color: #008c69;
+}
+
+
+/* ===============================
+   MAIN CONTAINER
+================================ */
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 25px;
+}
+
+
+/* ===============================
+   FEATURED ARTICLE
+================================ */
+
+.featured-article {
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+.featured-article img {
+    width: 100%;
+    height: 430px;
+
+    object-fit: cover;
+
+    margin-bottom: 12px;
+}
+
+
+/* MAIN HEADLINE */
+
+.featured-article h1 {
+    font-size: 32px;
+    line-height: 1.15;
+
+    margin-bottom: 20px;
+
+    color: #202020;
+}
+
+
+/* AUTHOR */
+
+.author {
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    color: #555;
+
+    margin-bottom: 16px;
+}
+
+
+/* DESCRIPTION */
+
+.description {
+    font-size: 19px;
+
+    line-height: 1.55;
+
+    color: #333;
+}
+
+
+/* ===============================
+   SECOND ARTICLE
+================================ */
+
+.article {
+    display: grid;
+
+    grid-template-columns: 1fr 200px;
+
+    gap: 25px;
+
+    padding: 30px 0;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+.article h2 {
+    font-size: 25px;
+
+    line-height: 1.25;
+
+    margin-bottom: 20px;
+}
+
+
+.article img {
+    height: 125px;
+
+    object-fit: cover;
+}
+
+
+/* ===============================
+   ARTICLE GRID
+================================ */
+
+.article-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+    padding-top: 30px;
+}
+
+
+.small-article {
+    border-bottom: 1px solid #ddd;
+
+    padding-bottom: 20px;
+}
+
+
+.small-article img {
+    height: 200px;
+
+    object-fit: cover;
+
+    margin-bottom: 15px;
+}
+
+
+.small-article h2 {
+    font-size: 22px;
+
+    line-height: 1.25;
+
+    margin: 8px 0 15px;
+}
+
+
+.category {
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    color: #777;
+
+    letter-spacing: 1px;
+}
+
+
+/* ===============================
+   FOOTER
+================================ */
+
+footer {
+    margin-top: 50px;
+
+    background: #1d1d1d;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 50px 20px;
+}
+
+
+.footer-brand {
+    font-family: Georgia, serif;
+
+    font-size: 35px;
+
+    margin-bottom: 15px;
+}
+
+
+footer p {
+    color: #ccc;
+
+    margin-bottom: 25px;
+}
+
+
+.footer-links {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+}
+
+
+/* ===============================
+   MOBILE
+================================ */
+
+@media (max-width: 768px) {
+
+    .top-navbar {
+        height: 65px;
+    }
+
+    .brand {
+        font-size: 21px;
+    }
+
+    .menu-btn {
+        left: 18px;
+        font-size: 23px;
+    }
+
+    .nav-icons {
+        right: 18px;
+
+        gap: 15px;
+
+        font-size: 18px;
+    }
+
+
+    .info-bar {
+        padding: 10px 15px;
+    }
+
+    .date {
+        font-size: 14px;
+    }
+
+    .weather {
+        font-size: 13px;
+    }
+
+
+    .container {
+        padding: 15px;
+    }
+
+
+    .featured-article img {
+        height: 250px;
+    }
+
+
+    .featured-article h1 {
+        font-size: 27px;
+    }
+
+
+    .description {
+        font-size: 17px;
+    }
+
+
+    .article {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+
+    .article img {
+        height: 200px;
+
+        grid-row: 1;
+    }
+
+
+    .article-text {
+        grid-row: 2;
+    }
+
+
+    .article-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .small-article img {
+        height: 230px;
+    }
+
+}
