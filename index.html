@@ -1,124 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>The Vantage</title>
 
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Icons -->
+    <!-- Font Awesome -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
+
 <body>
 
-    <!-- ================= TOP NAVBAR ================= -->
+
+    <!-- =====================================================
+         TOP NAVBAR
+    ====================================================== -->
+
     <header class="top-navbar">
 
         <!-- Menu -->
-        <button class="menu-btn">
+        <button class="menu-btn" type="button">
             <i class="fa-solid fa-bars"></i>
         </button>
 
+
         <!-- Brand -->
-        <div class="brand">
+        <a href="index.html" class="brand">
             THE VANTAGE
-        </div>
+        </a>
+
 
         <!-- Right Icons -->
         <div class="nav-icons">
+
             <i class="fa-solid fa-user"></i>
+
             <i class="fa-solid fa-magnifying-glass"></i>
+
         </div>
 
     </header>
 
 
-    <!-- ================= INFO BAR ================= -->
-    <section class="info-bar">
 
-        <div class="date">
-            Tue, Sep 22, 2026
+    <!-- =====================================================
+         DATE + WEATHER
+    ====================================================== -->
+
+    <div class="top-header">
+
+
+        <!-- DATE -->
+
+        <div class="date" id="current-date">
+            Loading date...
         </div>
+
+
+
+        <!-- WEATHER -->
 
         <div class="weather">
-            <span>☁️</span>
-            27.12°C Kathmandu
-            <br>
-            <span class="air-quality">
-                Air Quality in Kathmandu: <b>31</b>
-            </span>
+
+            <div class="weather-main">
+
+                <span id="weather-icon">
+                    🌤️
+                </span>
+
+                <span id="temperature">
+                    Loading...
+                </span>
+
+                <span id="city">
+                    Kathmandu
+                </span>
+
+            </div>
+
+
+            <div class="weather-details">
+
+                <div id="weather-description">
+                    Loading weather...
+                </div>
+
+
+                <div class="air-quality-text">
+
+                    Air Quality in Kathmandu:
+
+                    <strong id="air-quality">
+                        --
+                    </strong>
+
+                </div>
+
+            </div>
+
         </div>
 
-    </section>
+    </div>
 
 
-    <!-- ================= MAIN CONTENT ================= -->
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
     <main class="container">
 
-        <!-- FEATURED ARTICLE -->
-        <article class="featured-article">
 
-            <img src="images/Screenshot 2026-09-22 135224.png"
-                alt="Featured article">
+        <!-- =================================================
+             ARTICLE 1 - FEATURED
+        ================================================== -->
+
+        <article
+            class="featured-article"
+            onclick="window.location.href='article1.html'"
+        >
+
+            <img
+                src="images/Screenshot 2026-09-22 135224.png"
+                alt="The Price of Blood"
+            >
+
 
             <h1>
-                THE PRICE OF BLOOD: EXPOSING THE COLONIAL BLUFF AND THE MYTH OF UNEARNED PEACE
+                THE PRICE OF BLOOD: EXPOSING THE COLONIAL BLUFF
+                AND THE MYTH OF UNEARNED PEACE
             </h1>
 
+
             <p class="author">
-                By Yogesh  Pokharel
+                By Yogesh Pokharel
             </p>
 
+
             <p class="description">
-                History books are written by the comfortable, for the comfortable: footnoted, hedged, 
-                careful to give the executioner and the executed an equal hearing, as if there were two 
-                respectable sides to strapping a man to the mouth of a cannon
+
+                History books are written by the comfortable, for the
+                comfortable: footnoted, hedged, careful to give the
+                executioner and the executed an equal hearing, as if
+                there were two respectable sides to strapping a man
+                to the mouth of a cannon.
+
             </p>
 
         </article>
 
 
-        <!-- ================= SECOND ARTICLE ================= -->
-        <article class="article">
+
+        <!-- =================================================
+             ARTICLE 2
+        ================================================== -->
+
+        <article
+            class="article"
+            onclick="window.location.href='article2.html'"
+        >
+
 
             <div class="article-text">
 
                 <h2>
-                    The Blueprint to save Nepal's Billions 
+                    The Blueprint to Save Nepal's Billions
                 </h2>
+
 
                 <p class="author">
                     By Yogesh Pokharel
                 </p>
 
+
                 <p class="description">
-                Nepal is at a historic turning point. As our country prepares to move up from "Least Developed Country" status, the old ways of building infrastructure are no longer working. Right now, our national budget is under heavy strain. We are spending billions of rupees every winter to import expensive electricity, and we waste massive amounts of money every year just to fix broken roads. 
+
+                    Nepal is at a historic turning point. As our
+                    country prepares to move up from "Least Developed
+                    Country" status, the old ways of building
+                    infrastructure are no longer working.
+
+                    Right now, our national budget is under heavy
+                    strain. We are spending billions of rupees every
+                    winter to import expensive electricity, and we
+                    waste massive amounts of money every year just
+                    to fix broken roads.
+
                 </p>
 
             </div>
 
-            <img src="images/Screenshot 2026-10-01 223854.png"
-                alt="Second article">
+
+
+            <img
+                src="images/Screenshot 2026-10-01 223854.png"
+                alt="The Blueprint to Save Nepal's Billions"
+            >
 
         </article>
 
 
-        <!-- ================= MORE ARTICLES ================= -->
+
+        <!-- =================================================
+             ARTICLES 3, 4 AND 5
+        ================================================== -->
+
         <section class="article-grid">
 
-            <article class="small-article">
 
-                <img src="images/Burying the Beautiful Game.png" alt="Article">
+            <!-- =================================================
+                 ARTICLE 3
+            ================================================== -->
 
-                <p class="category">POLITICS</p>
+            <article
+                class="small-article"
+                onclick="window.location.href='article3.html'"
+            >
+
+                <img
+                    src="images/football.png"
+                    alt="Burying the Beautiful Game"
+                >
+
+
+                <p class="category">
+                    SPORTS
+                </p>
+
 
                 <h2>
-                    Burying the Beautiful Game 
+                    Burying the Beautiful Game
                 </h2>
+
 
                 <p class="author">
                     By Yogesh Pokharel
@@ -127,15 +247,34 @@
             </article>
 
 
-            <article class="small-article">
 
-                <img src="images/article4.jpg" alt="Article">
+            <!-- =================================================
+                 ARTICLE 4
+            ================================================== -->
 
-                <p class="category">SOCIETY</p>
+            <article
+                class="small-article"
+                onclick="window.location.href='article4.html'"
+            >
+
+                <img
+                    src="images/rabindra.png"
+                    alt="Rabindra Dhant article"
+                >
+
+
+                <p class="category">
+                    ANIMAL
+                </p>
+
 
                 <h2>
-                    Young people are reshaping Nepal's future
+
+                    How Rabindra Dhant’s Heartbreaking Story and
+                    Unmatched Hype Can Create Nepal’s First UFC Star
+
                 </h2>
+
 
                 <p class="author">
                     By Yogesh Pokharel
@@ -144,50 +283,93 @@
             </article>
 
 
-            <article class="small-article">
 
-                <img src="images/article5.jpg" alt="Article">
+            <!-- =================================================
+                 ARTICLE 5
+            ================================================== -->
 
-                <p class="category">CULTURE</p>
+            <article
+                class="small-article"
+                onclick="window.location.href='article5.html'"
+            >
+
+                <img
+                    src="images/article5.jpg"
+                    alt="Culture article"
+                >
+
+
+                <p class="category">
+                    CULTURE
+                </p>
+
 
                 <h2>
-                    The changing face of Nepali culture
+                    Culture
                 </h2>
+
 
                 <p class="author">
                     By Yogesh Pokharel
                 </p>
 
             </article>
+
 
         </section>
+
 
     </main>
 
 
 
-    
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
 
-    <!-- ================= FOOTER ================= -->
     <footer>
 
         <div class="footer-brand">
             THE VANTAGE
         </div>
 
+
         <p>
             Independent journalism from Nepal
         </p>
 
+
         <div class="footer-links">
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-            <a href="#">Privacy</a>
-            <a href="#">Terms</a>
+
+            <a href="#">
+                About
+            </a>
+
+            <a href="#">
+                Contact
+            </a>
+
+            <a href="#">
+                Privacy
+            </a>
+
+            <a href="#">
+                Terms
+            </a>
+
         </div>
 
     </footer>
 
 
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="script.js"></script>
+
+
 </body>
+
 </html>

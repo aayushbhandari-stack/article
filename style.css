@@ -1,3 +1,64 @@
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    min-height: 60px;
+    background: white;
+    border-top: 5px solid #222;
+    font-family: Georgia, serif;
+    box-sizing: border-box;
+}
+
+.date {
+    font-size: 20px;
+}
+
+.weather {
+    text-align: right;
+}
+
+.weather-main {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 6px;
+    font-size: 18px;
+}
+
+.weather-main img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.weather-details {
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+#air-quality {
+    color: #009688;
+}
+
+@media (max-width: 600px) {
+    .top-header {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .date,
+    .weather-main {
+        font-size: 14px;
+    }
+
+    .weather-details {
+        font-size: 12px;
+    }
+}
+
+
 /* ===============================
    GENERAL
 ================================ */
@@ -422,4 +483,194 @@ footer p {
         height: 230px;
     }
 
+}
+.featured-article {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.featured-article:hover {
+    transform: translateY(-3px);
+}
+
+.featured-article img {
+    transition: opacity 0.2s ease;
+}
+
+.featured-article:hover img {
+    opacity: 0.92;
+}
+
+.featured-article h1 {
+    transition: color 0.2s ease;
+}
+
+.featured-article:hover h1 {
+    color: #555;
+}
+/* ==============================
+   SINGLE ARTICLE PAGE
+============================== */
+
+.single-article {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 30px;
+}
+
+
+/* BACK BUTTON */
+
+.back-button {
+    display: inline-block;
+    margin-bottom: 35px;
+
+    color: #222;
+    text-decoration: none;
+
+    font-size: 15px;
+}
+
+.back-button:hover {
+    text-decoration: underline;
+}
+
+
+/* CATEGORY */
+
+.article-category {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+
+/* TITLE */
+
+.article-title {
+    font-family: Georgia, serif;
+
+    font-size: 48px;
+    line-height: 1.1;
+
+    margin-bottom: 20px;
+}
+
+
+/* AUTHOR */
+
+.article-author {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+
+/* DATE */
+
+.article-date {
+    color: #777;
+    font-size: 14px;
+
+    margin-bottom: 30px;
+}
+
+
+/* IMAGE */
+
+.article-main-image {
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    margin-bottom: 40px;
+}
+
+
+/* CONTENT */
+
+.article-content {
+    max-width: 800px;
+    margin: auto;
+
+    font-family: Georgia, serif;
+
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+
+.article-content p {
+    margin-bottom: 28px;
+}
+
+
+.article-content h2 {
+    font-size: 30px;
+
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .single-article {
+        margin: 30px auto;
+        padding: 0 18px;
+    }
+
+    .article-title {
+        font-size: 32px;
+    }
+
+    .article-content {
+        font-size: 18px;
+    }
+
+}
+.article {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.article:hover {
+    transform: translateY(-3px);
+}
+
+.article:hover h2 {
+    color: #555;
+}
+/* =========================================
+   CLICKABLE ARTICLES
+========================================= */
+
+.featured-article,
+.article,
+.small-article {
+    cursor: pointer;
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+
+/* Hover */
+
+.featured-article:hover,
+.article:hover,
+.small-article:hover {
+    transform: translateY(-4px);
+}
+
+
+/* Title hover */
+
+.featured-article:hover h1,
+.article:hover h2,
+.small-article:hover h2 {
+    color: #555;
 }
