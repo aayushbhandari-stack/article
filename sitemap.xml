@@ -4,32 +4,42 @@
 
   <url>
        <loc>https://pokharelyogesh.com.np/</loc>
-       <lastmod>2026-11-21T19:23:54+00:00</lastmod>
+       <lastmod>2026-11-25T18:38:19+00:00</lastmod>
        <priority>1.0000</priority>
   </url>
   <url>
-       <loc>https://pokharelyogesh.com.np/price-of-blood.html</loc>
-       <lastmod>2026-11-21T19:23:54+00:00</lastmod>
+       <loc>https://pokharelyogesh.com.np/price-of-blood</loc>
+       <lastmod>2026-11-25T18:38:19+00:00</lastmod>
        <priority>0.8000</priority>
   </url>
   <url>
-       <loc>https://pokharelyogesh.com.np/game-over.html</loc>
-       <lastmod>2026-11-21T19:23:54+00:00</lastmod>
+       <loc>https://pokharelyogesh.com.np/illusion-of-progress</loc>
+       <lastmod>2026-11-25T18:38:19+00:00</lastmod>
        <priority>0.8000</priority>
   </url>
   <url>
-       <loc>https://pokharelyogesh.com.np/is-dhant-ufc-ready.html</loc>
-       <lastmod>2026-11-21T19:23:54+00:00</lastmod>
+       <loc>https://pokharelyogesh.com.np/game-over</loc>
+       <lastmod>2026-11-25T18:38:19+00:00</lastmod>
        <priority>0.8000</priority>
   </url>
   <url>
-       <loc>https://pokharelyogesh.com.np/european-secret.html</loc>
-       <lastmod>2026-11-21T19:23:54+00:00</lastmod>
+       <loc>https://pokharelyogesh.com.np/is-dhant-ufc-ready</loc>
+       <lastmod>2026-11-25T18:38:19+00:00</lastmod>
        <priority>0.8000</priority>
   </url>
   <url>
-       <loc>https://pokharelyogesh.com.np/illusion-of-progress.html</loc>
-       <lastmod>2026-11-21T19:23:54+00:00</lastmod>
+       <loc>https://pokharelyogesh.com.np/european-secret</loc>
+       <lastmod>2026-11-25T18:38:19+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://pokharelyogesh.com.np/about</loc>
+       <lastmod>2026-11-25T18:38:19+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://pokharelyogesh.com.np/contact</loc>
+       <lastmod>2026-11-25T18:38:19+00:00</lastmod>
        <priority>0.6400</priority>
   </url>
 </urlset>
