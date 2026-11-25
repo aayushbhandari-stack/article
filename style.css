@@ -443,6 +443,105 @@ a {
 }
 
 /* =========================================================
+   ARTICLE BOTTOM: ABOUT THE VANTAGE & READ NEXT
+========================================================= */
+.article-bottom-section {
+    margin-top: 50px;
+    padding-top: 35px;
+    border-top: 3px solid #222;
+}
+
+.about-vantage-box {
+    background: #f9f9f9;
+    border-left: 4px solid #1d1d1d;
+    padding: 22px 24px;
+    margin-bottom: 40px;
+}
+
+.about-vantage-label {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.about-vantage-box p {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #333;
+    text-align: left;
+    margin: 0;
+}
+
+.read-next-heading {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #202020;
+    margin-bottom: 16px;
+}
+
+.read-next-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.read-next-list li {
+    padding: 16px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.read-next-list li:last-child {
+    border-bottom: none;
+}
+
+.read-next-category {
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.read-next-list a {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.35;
+    color: #202020;
+    transition: color 0.2s ease;
+}
+
+.read-next-list a:hover {
+    color: #555;
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .about-vantage-box {
+        padding: 18px;
+    }
+
+    .about-vantage-box p {
+        font-size: 16px;
+    }
+
+    .read-next-list a {
+        font-size: 18px;
+    }
+}
+
+/* =========================================================
    FOOTER
 ========================================================= */
 footer {

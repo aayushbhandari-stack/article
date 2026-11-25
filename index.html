@@ -19,8 +19,9 @@
     <meta name="twitter:card" content="summary_large_image">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/jpeg" href="images/Favicon.jpg">
-    <link rel="apple-touch-icon" href="images/Favicon.jpg">
+    <link rel="icon" type="image/jpeg" sizes="96x96" href="images/Favicon.jpg">
+    <link rel="icon" type="image/jpeg" sizes="48x48" href="images/Favicon.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/Favicon.jpg">
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
@@ -43,13 +44,13 @@
     <header class="top-navbar">
 
         <!-- Menu -->
-        <button class="menu-btn" type="button">
+        <button class="menu-btn" type="button" aria-label="Open menu">
             <i class="fa-solid fa-bars"></i>
         </button>
 
 
         <!-- Brand -->
-        <a href="index.html" class="brand">
+        <a href="/" class="brand">
             THE VANTAGE
         </a>
 
@@ -136,39 +137,32 @@
 
 
         <!-- =================================================
-             ARTICLE 1 - FEATURED
+            ARTICLE 1 - FEATURED
         ================================================== -->
 
-        <article
-            class="featured-article"
-            onclick="window.location.href='/price-of-blood.html'"
+        <article class="featured-article">
+    <a href="/price-of-blood" style="text-decoration: none; color: inherit; display: block;">
+
+        <img
+            src="images/price of blood.png"
+            alt="The Price of Blood"
         >
 
-            <img
-                src="images/price of blood.png"
-                alt="The Price of Blood"
-            >
+        <h1>
+            THE PRICE OF BLOOD: EXPOSING THE COLONIAL BLUFF
+            AND THE MYTH OF UNEARNED PEACE
+        </h1>
 
+        <p class="author">
+            By Yogesh Pokharel
+        </p>
 
-            <h1>
-                THE PRICE OF BLOOD: EXPOSING THE COLONIAL BLUFF
-                AND THE MYTH OF UNEARNED PEACE
-            </h1>
+        <p class="description">
+            This essay dismantles the myth of a purely peaceful British exit, arguing that India's freedom was won through armed rebellion, economic sabotage resistance and military mutiny rather than polite petitions. Tracing a century of defiance from the industrial foundries of Lahore and the Jallianwala Bagh massacre to the Ghadar underground, Bhagat Singh's gallows and the 1946 Royal Indian Navy mutiny, it exposes how the British Empire only retreated once native soldiers turned their guns against the Raj.
+        </p>
 
-
-            <p class="author">
-                By Yogesh Pokharel
-            </p>
-
-
-            <p class="description">
-
-                This essay dismantles the myth of a purely peaceful British exit, arguing that India's freedom was won through armed rebellion, economic sabotage resistance and military mutiny rather than polite petitions. Tracing a century of defiance from the industrial foundries of Lahore and the Jallianwala Bagh massacre to the Ghadar underground, Bhagat Singh's gallows and the 1946 Royal Indian Navy mutiny, it exposes how the British Empire only retreated once native soldiers turned their guns against the Raj.
-
-            </p>
-
-        </article>
-
+    </a>
+</article>
 
 
         <!-- =================================================
@@ -178,7 +172,7 @@
         <article class="article">
     <div class="article-text">
         <h2>
-            <a href="/illusion-of-progress.html">
+            <a href="/illusion-of-progress">
                 The Illusion of Progress: How Nepal's System Destroys its Own Wealth
             </a>
         </h2>
@@ -192,7 +186,7 @@
         </p>
     </div>
 
-    <a href="/illusion-of-progress.html">
+    <a href="/illusion-of-progress">
         <img
             src="images/Image for Nepal-infrastructure-blueprint.png"
             alt="The Blueprint to Save Nepal's Billions"
@@ -213,10 +207,8 @@
                  ARTICLE 3
             ================================================== -->
 
-            <article
-                class="small-article"
-                onclick="window.location.href='/game-over.html'"
-            >
+            <article class="small-article">
+                <a href="/game-over" style="text-decoration: none; color: inherit; display: block;">
 
                 <img
                     src="images/football.png"
@@ -238,18 +230,18 @@
                     By Yogesh Pokharel
                 </p>
 
+                </a>
+
             </article>
 
 
 
             <!-- =================================================
-                 ARTICLE 4
+                ARTICLE 4
             ================================================== -->
 
-            <article
-                class="small-article"
-                onclick="window.location.href='/is-dhant-ufc-ready.html'"
-            >
+            <article class="small-article">
+                <a href="/is-dhant-ufc-ready" style="text-decoration: none; color: inherit; display: block;">
 
                 <img
                     src="images/rabindra.png"
@@ -273,6 +265,8 @@
                     By Yogesh Pokharel
                 </p>
 
+                </a>
+
             </article>
 
 
@@ -281,10 +275,8 @@
                 ARTICLE 5
             ================================================== -->
 
-            <article
-                class="small-article"
-                onclick="window.location.href='/european-secret.html'"
-            >
+            <article class="small-article">
+                <a href="/european-secret" style="text-decoration: none; color: inherit; display: block;">
 
                 <img
                     src="images/imagine nepal.png"
@@ -306,11 +298,12 @@
                     By Yogesh Pokharel
                 </p>
 
+                </a>
+
             </article>
 
 
         </section>
-
 
     </main>
 
@@ -334,7 +327,7 @@
 
         <div class="footer-links">
 
-            <a href="#">
+            <a href="/about">
                 About
             </a>
 
@@ -354,14 +347,11 @@
 
     </footer>
 
-
-
     <!-- =====================================================
-         JAVASCRIPT
+        JAVASCRIPT
     ====================================================== -->
 
     <script src="script.js"></script>
-
 
 </body>
 
